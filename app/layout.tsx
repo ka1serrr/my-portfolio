@@ -16,12 +16,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={cn(inter.className, "bg-gray-50 text-gray-950")}>
         <div
           className={
-            "bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] h-[31rem] w-[31rem] rounded-full blur-[184px] sm:w-[68rem]"
+            "bg-[#fbe2e3] absolute -z-10 top-[-6rem] right-[11rem] h-[31rem] w-[31rem] rounded-full blur-[184px] sm:w-[68rem]"
           }
         ></div>
         <div
           className={
-            "bg-[#dbd7fb] absolute top-[-1rem] right-[35rem] h-[31rem] w-[31rem] rounded-full blur-[184px] sm:w-[68rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"
+            "bg-[#dbd7fb] absolute -z-10 top-[-1rem] right-[35rem] h-[31rem] w-[31rem] rounded-full blur-[184px] sm:w-[68rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] "
           }
         ></div>
         {children}
