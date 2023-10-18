@@ -1,3 +1,5 @@
+import { CV, UFC } from "@/public";
+
 export const links = [
   {
     name: "Home",
