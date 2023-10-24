@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/shared";
-import { Header } from "@/source/entites/header";
+import { Header } from "@/entities";
 
 const inter = Inter({ weight: ["400", "700", "800"], subsets: ["cyrillic", "latin"] });
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={cn(inter.className, "bg-gray-50 text-gray-950")}>
+      <body className={cn(inter.className, "bg-gray-50 text-gray-950 relative pt-28 sm:pt-36")}>
         <div
           className={
             "bg-[#fbe2e3] absolute -z-10 top-[-6rem] right-[11rem] h-[31rem] w-[31rem] rounded-full blur-[184px] sm:w-[68rem]"

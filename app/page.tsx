@@ -1,9 +1,9 @@
-import Image from "next/image";
+import { Intro } from "@/widgets/intro";
 
 export default function MainPage() {
   return (
-    <main>
-      <h1 className={"text-2xl"}>Main page</h1>
+    <main className='flex flex-col items-center px-4'>
+      <Intro />
     </main>
   );
 }

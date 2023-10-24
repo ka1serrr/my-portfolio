@@ -22,7 +22,8 @@
     "paths": {
       "@/*": ["*"],
       "@/shared": ["source/shared/index.ts"],
-      "@/entities/*": ["source/entities/*"]
+      "@/entities": ["source/entities/index.ts"],
+      "@/widgets/*": ["source/widgets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

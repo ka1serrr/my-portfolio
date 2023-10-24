@@ -1,4 +1,4 @@
 import UFC from "./ufc.png";
-import CV from "./CV.pdf";
+import AVATAR from "./avatar.png";
 
-export { CV, UFC };
+export { UFC, AVATAR };

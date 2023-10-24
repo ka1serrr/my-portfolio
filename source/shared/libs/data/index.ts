@@ -1,28 +1,29 @@
-import { CV, UFC } from "@/public";
+import { UFC, AVATAR } from "@/public";
+export { UFC, AVATAR };
 
 export const links = [
   {
-    name: "Home",
+    name: "Начало",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Инфо",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Проекты",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Скилы",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Опыт",
     hash: "#experience",
   },
   {
-    name: "Contact",
+    name: "Контакты",
     hash: "#contact",
   },
 ] as const;
