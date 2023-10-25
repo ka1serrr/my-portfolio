@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import { cn } from "@/shared";
 import { Header } from "@/entities";
 
-const inter = Inter({ weight: ["400", "700", "800"], subsets: ["cyrillic", "latin"] });
+const inter = Inter({ weight: ["400", "700", "800"], subsets: ["cyrillic", "latin"], style: ["normal"] });
 
 export const metadata: Metadata = {
   title: "Ярослав | Сайт Портфолио",
