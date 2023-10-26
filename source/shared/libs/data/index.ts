@@ -30,40 +30,30 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "ufcfightpass.ru/Zarya Digital (Бизнесс в стиле.Ru)",
+    title: "ufcfightpass.ru",
     description:
       "Работаю на этом проекте Front-end разработчиком с ноябре 2022 года. Сайт для покупки ufcfightpass для жителей РФ",
     tags: ["React", "JavaScript", "Scss", "Redux", "RTK"],
     image: UFC,
   },
   {
-    title: "Homeet/Бизнес в стиле.Ru",
+    title: "Homeet",
     description:
       "Работал на этом проекте с июля по сентябрь 2023 года. Сервис для поиска соседей и/или квартир для сотрудников и студентов НИУ ВШЭ.",
     tags: ["React", "TypeScript", "CSS Modules", "Redux", "RTK"],
     image: HOMEET,
   },
   {
-    title: "m8store (в разработке)/ISourcing",
+    title: "m8store",
     description:
       "Работал на этом проекте с июля 2023 года. Маркетплейс для местных брендов одежды. Также работал над созданием административной панели",
-    tags: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Tailwindcss",
-      "Styled-components",
-      "Redux",
-      "RTK",
-      "RTK-Query",
-      "Framer Motion",
-    ],
+    tags: ["React", "Next.js", "TypeScript", "Tailwindcss", "Redux", "RTK", "RTK-Query", "Framer Motion"],
     image: M8STORE,
   },
   {
-    title: "Sustainable Emotions/Zarya Digital",
+    title: "Sustainable Emotions",
     description:
-      'Работал над этим проектом в октябре. Сайт для дубайской выставки DIFC Art Nights. Сайт для расшировки снов при помощи MidJourneyApi. Присутствуют два режима: стандартный и по "корану"',
+      "Работал над этим проектом в октябре. Сайт для дубайской выставки DIFC Art Nights. Сайт для расшировки снов при помощи AI.",
     tags: ["React", "TypeScript", "Tailwindcss", "Redux", "RTK", "RTK-Query", "Framer Motion"],
     image: SUSTAINABLE_EMOTIONS,
   },

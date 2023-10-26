@@ -5,7 +5,7 @@ import { Project } from "@/entities";
 export const Projects = () => {
   return (
     <section>
-      <SectionHeading>Мои проекты</SectionHeading>
+      <SectionHeading className='mb-8'>Мои проекты</SectionHeading>
       <div>
         {projectsData.map((project) => (
           <Project key={project.title} {...project} />
