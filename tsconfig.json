@@ -23,7 +23,8 @@
       "@/*": ["*"],
       "@/shared": ["source/shared/index.ts"],
       "@/entities": ["source/entities/index.ts"],
-      "@/widgets/*": ["source/widgets/*"]
+      "@/widgets/*": ["source/widgets/*"],
+      "@/appsrc/*": ["source/app/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

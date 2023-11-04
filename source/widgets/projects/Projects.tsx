@@ -4,7 +4,7 @@ import { Project } from "@/entities";
 
 export const Projects = () => {
   return (
-    <section>
+    <section id='projects' className='scroll-mt-28'>
       <SectionHeading className='mb-8'>Мои проекты</SectionHeading>
       <div>
         {projectsData.map((project) => (

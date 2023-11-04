@@ -1,13 +1,13 @@
 "use client";
 
-import { Divider, projectsData } from "@/shared";
+import { projectsData } from "@/shared";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import { FC, useRef } from "react";
 
 type Props = (typeof projectsData)[0];
 
-// TODO: Каким-либо образом нужно заскринить так, чтобы они в итоге получились больше!!
+// TODO: Каким-либо образом нужно заскринить сайты так, чтобы они в итоге получились больше!!
 
 export const Project: FC<Props> = (props) => {
   const { title, description, tags, image } = props;
