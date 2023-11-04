@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { cn, links } from "@/shared";
 import Link from "next/link";
 import { useAppDispatch, useAppSelector } from "@/source/shared/hooks";
-import { setActiveSection } from "../models";
+import { setActiveSection, setTimeOfTheLastClick } from "../models";
 
 const variants = {
   initialHeader: { y: -100, x: "-50%", opacity: 0 },
@@ -41,7 +41,10 @@ export const Header = () => {
                   "text-gray-900": activeSection === link.hash,
                 })}
                 href={link.hash}
-                onClick={() => dispatch(setActiveSection(link.hash))}
+                onClick={() => {
+                  dispatch(setActiveSection(link.hash));
+                  dispatch(setTimeOfTheLastClick(Date.now()));
+                }}
               >
                 {link.name}
 

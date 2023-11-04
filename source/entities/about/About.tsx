@@ -1,6 +1,7 @@
 "use client";
+
 import { motion } from "framer-motion";
-import { SectionHeading } from "@/shared";
+import { SectionHeading, useSectionInView } from "@/shared";
 
 const variants = {
   initial: { opacity: 0, y: 100 },
@@ -8,8 +9,11 @@ const variants = {
 };
 
 export const About = () => {
+  const { ref } = useSectionInView({ threshold: 0.6, activeSection: "#about" });
+
   return (
     <motion.section
+      ref={ref}
       className='mb-28 max-w-[45rem] text-2xl text-center leading-8 sm:mb-40 scroll-mt-28'
       id='about'
       variants={variants}

@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { AVATAR } from "@/shared";
+import { AVATAR, useAppDispatch, useAppSelector, useSectionInView } from "@/shared";
 import { motion } from "framer-motion";
-import { InfoButtons } from "@/entities";
+import { InfoButtons, setActiveSection } from "@/entities";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const variants = {
   imageInitial: { opacity: 0, scale: 0 },
@@ -13,8 +15,10 @@ const variants = {
 };
 
 export const Intro = () => {
+  const { ref } = useSectionInView({ threshold: 0.4, activeSection: "#home" });
+
   return (
-    <section id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
+    <section ref={ref} id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div

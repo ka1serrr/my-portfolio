@@ -1,9 +1,11 @@
 "use client";
 
-import { projectsData } from "@/shared";
+import { projectsData, useAppDispatch } from "@/shared";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
-import { FC, useRef } from "react";
+import { FC, useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
+import { setActiveSection } from "@/source/entities";
 
 type Props = (typeof projectsData)[0];
 

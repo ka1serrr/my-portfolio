@@ -1,13 +1,15 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
-type activeSection = "#home" | "#about" | "#projects" | "#skills" | "#experience" | "#contacts";
+export type activeSection = "#home" | "#about" | "#projects" | "#skills" | "#experience" | "#contacts";
 
 type InitialState = {
   activeSection: activeSection;
+  timeOfTheLastClick: number;
 };
 
 const initialState: InitialState = {
   activeSection: "#home",
+  timeOfTheLastClick: 0,
 };
 
 const headerSlice = createSlice({
@@ -17,8 +19,11 @@ const headerSlice = createSlice({
     setActiveSection: (state, action: PayloadAction<activeSection>) => {
       state.activeSection = action.payload;
     },
+    setTimeOfTheLastClick: (state, action: PayloadAction<number>) => {
+      state.timeOfTheLastClick = action.payload;
+    },
   },
 });
 
-export const { setActiveSection } = headerSlice.actions;
+export const { setActiveSection, setTimeOfTheLastClick } = headerSlice.actions;
 export const { reducer: headerSliceReducer } = headerSlice;
