@@ -9,6 +9,7 @@ type Props = {
   threshold: number;
   activeSection: activeSection;
 };
+
 export const useSectionInView = ({ threshold, activeSection }: Props) => {
   const { ref, inView } = useInView({
     threshold,

@@ -15,7 +15,7 @@ export const links = [
     hash: "#projects",
   },
   {
-    name: "Скилы",
+    name: "Скиллы",
     hash: "#skills",
   },
   {
@@ -59,19 +59,37 @@ export const projectsData = [
   },
 ];
 
+export type SkillData =
+  | "HTML"
+  | "CSS"
+  | "SCSS"
+  | "JavaScript"
+  | "TypeScript"
+  | "React"
+  | "Next.js"
+  | "Git"
+  | "Tailwindcss"
+  | "Storybook"
+  | "Redux"
+  | "RTK"
+  | "Node.js"
+  | "Framer Motion"
+  | "Styled-Components";
+
 export const skillsData = [
   "HTML",
   "CSS",
+  "SCSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
   "Git",
   "Tailwindcss",
-  "Prisma",
+  "Storybook",
   "Redux",
-  "Python",
+  "RTK",
+  "Node.js",
   "Framer Motion",
   "Styled-Components",
-  "SCSS",
 ] as const;
