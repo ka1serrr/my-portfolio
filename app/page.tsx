@@ -2,8 +2,8 @@ import { Divider } from "@/shared";
 import { Intro } from "@/widgets/intro";
 import { About } from "@/entities";
 import { Projects } from "@/widgets/projects";
-import { StoreProvider } from "../source/app/providers";
-import { Skills } from "@/source/widgets/skills";
+import { Skills } from "@/widgets/skills";
+import { Experience } from "@/widgets/experience";
 
 export default function MainPage() {
   return (
@@ -13,6 +13,7 @@ export default function MainPage() {
       <About />
       <Projects />
       <Skills />
+      <Experience />
     </main>
   );
 }

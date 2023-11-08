@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }
           ></div>
           <Header />
-          {children}{" "}
+          {children}
         </body>
       </html>
     </AppProvider>

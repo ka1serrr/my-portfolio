@@ -1,3 +1,8 @@
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { BsPersonWorkspace } from "react-icons/bs";
+
 import { UFC, AVATAR, M8STORE, HOMEET, SUSTAINABLE_EMOTIONS } from "@/public";
 export { UFC, AVATAR, M8STORE, HOMEET, SUSTAINABLE_EMOTIONS };
 
@@ -93,3 +98,29 @@ export const skillsData = [
   "Framer Motion",
   "Styled-Components",
 ] as const;
+
+export const experiencesData = [
+  {
+    title: "Платёжная система (Название под NDA)",
+    location: "Москва, РФ",
+    description: "Занимался разработкой платёжной системы. ",
+    icon: React.createElement(BsPersonWorkspace),
+    date: "Февраль 2021 - январь 2022",
+  },
+  {
+    title: "Бизнес в стиле.Ru/zarya.digital",
+    location: "Москва, РФ",
+    description:
+      "Являюсь frontend-разработчкиком на протяжении 11 месяцев. Здесь писал ufcfightpas.ru, Homeet, Sustainable Emotions.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Ноябрь 2022 - сейчас",
+  },
+  {
+    title: "ISourcing",
+    location: "Москва, РФ",
+    description:
+      "На протяжении 5 месяцев был frontend-разработчиком. Разрабатывал маркетплейс m8store и административную панель для него.",
+    icon: React.createElement(FaReact),
+    date: "Июль 2022 - ноябрь 2022",
+  },
+];
