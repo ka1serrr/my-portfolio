@@ -1,11 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { AVATAR, useAppDispatch, useAppSelector, useSectionInView } from "@/shared";
+import { AVATAR, useSectionInView } from "@/shared";
 import { motion } from "framer-motion";
-import { InfoButtons, setActiveSection } from "@/entities";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { InfoButtons } from "@/entities";
 
 const variants = {
   imageInitial: { opacity: 0, scale: 0 },
